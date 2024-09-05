@@ -1,6 +1,6 @@
-### Nome do App
+### Ifome
 
-Nosso aplicativo foi desenvolvido para ajudar jovens que estão começando a vida universitária e se deparando com o desafio de cozinhar pela primeira vez.
+O aplicativo foi desenvolvido para ajudar jovens que estão começando a vida universitária e se deparando com o desafio de cozinhar pela primeira vez.
 
 Sabemos que morar sozinho e administrar a própria alimentação pode ser uma tarefa assustadora, especialmente para quem não tem experiência na cozinha. Por isso, criamos uma plataforma intuitiva e acessível, com receitas simples, instruções passo a passo e dicas práticas, além de poder interagir e comentar receitas de seus amigos.
 
