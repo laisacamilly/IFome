@@ -1,4 +1,4 @@
-### Ifome
+### IFome
 
 O aplicativo foi desenvolvido para ajudar jovens que estão começando a vida universitária e se deparando com o desafio de cozinhar pela primeira vez.
 
