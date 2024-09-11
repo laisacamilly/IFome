@@ -16,7 +16,6 @@ Rafael Bravo.
 
 Lorenzo.
 * [Github](https://github.com/Loress33)
-* [Linkedin](https://www.linkedin.com/in/l%C3%A1isa-camilly/)
 
 João Ferreira.
 * [Github](https://github.com/joaocavf)
