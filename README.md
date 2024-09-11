@@ -12,7 +12,7 @@ Láisa Camilly de Oliveira.
 
 Rafael Bravo.
 * [Github](https://github.com/R4f43lVB)
-* [Linkedin](colocar)
+* [Linkedin](https://www.linkedin.com/in/rafael-bravo-b63931217/)
 
 Lorenzo.
 * [Github](https://github.com/Loress33)
