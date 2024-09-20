@@ -1,0 +1,65 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Barra de pesquisa */
+.barra_pesquisa{
+    align-self: center;
+    border-radius: 0.5rem;
+    height: 1.7rem;
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+/* Colocar a imagem config o canto da tela */
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.config{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* Post de receitas */
+main{
+    display: flex;
+}
+
+.post{
+    margin-top: 2.8rem;
+    margin-left: 1.8rem;
+    border: 1px solid black;
+}
+
+/* Parte final da página */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.final1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.final2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.final3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
