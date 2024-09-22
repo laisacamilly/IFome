@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: rgb(255, 49, 49);
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+h1{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+
+.botao{
+    height: 4rem;
+    width: 5rem;
+}
+
+.logo{
+    height: 5rem;
+    
+}
