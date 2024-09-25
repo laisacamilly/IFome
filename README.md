@@ -6,6 +6,8 @@ Sabemos que morar sozinho e administrar a própria alimentação pode ser uma ta
 
 # Colaboradores
 Láisa Camilly de Oliveira.
+Lorenzo Agiman
+Rafael Vieira Bravo
 
 * [Github](https://github.com/laisacamilly)
 * [Linkedin](https://www.linkedin.com/in/l%C3%A1isa-camilly/)

@@ -3,25 +3,83 @@ html{
     width: 100%;
 }
 
+section{
+    overflow: scroll;
+    height: 80%;
+}
+
 header{
-    background-color: rgb(255, 49, 49);
+    background-color: #ff3131;
     display: flex;
     justify-content: space-around;
-    
-    
+}
+
+header form{
+    display: flex;
+    align-items: center;
 }
 
 h1{
-    padding-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 footer{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: fixed;
     justify-content: space-around;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid black;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
+}
+
+article{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+
+
+div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+div h4 {
+    font-weight: bold;
+}
+
+div ul{
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
+}
+
+div ol{
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
 }
 
 .botao{
@@ -32,4 +90,14 @@ footer{
 .logo{
     height: 5rem;
     
+}
+
+.nome_de_receita{
+    padding: .3rem;
+    font-weight: bold;
+}
+
+.receita img{
+    height: 60%;
+    width: 90%;
 }
