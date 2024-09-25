@@ -1,11 +1,11 @@
-html{
+html, body{
     height: 100%;
     width: 100%;
 }
 
-section{
+main{
     overflow: scroll;
-    height: 80%;
+    height: 77%;
 }
 
 header{
