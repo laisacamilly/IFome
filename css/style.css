@@ -5,18 +5,21 @@ html, body{
 
 main{
     overflow: scroll;
-    height: 77%;
+    height: 82%;
 }
 
 header{
+    height: 4rem;
     background-color: #ff3131;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 header form{
     display: flex;
     align-items: center;
+    /*Colocar border-radius na barra de pesquisa*/
 }
 
 h1{
@@ -27,6 +30,7 @@ h1{
 }
 
 footer{
+    height: 8%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -83,13 +87,12 @@ div ol{
 }
 
 .botao{
-    height: 4rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .logo{
-    height: 5rem;
-    
+    height: 4rem;
 }
 
 .nome_de_receita{
@@ -101,3 +104,5 @@ div ol{
     height: 60%;
     width: 90%;
 }
+
+/*O botão do menu no header está desalinhado. Tentar alinhar ele*/
