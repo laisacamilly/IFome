@@ -1,0 +1,31 @@
+main img {
+    height: 10%;
+    width: 10%;
+}
+
+h1{
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+ul {
+    margin: .5rem;
+}
+
+#validade {
+    padding-left: 1rem;
+    list-style-type: none;
+    margin-bottom: .7rem;
+}
