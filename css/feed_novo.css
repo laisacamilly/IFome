@@ -1,0 +1,30 @@
+/* Parte do cabeçalho */
+header{
+    flex-direction: row;
+    background-color: lightgray;
+}
+
+.titulo{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.voltar{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.sino{
+    align-self: center;
+    margin-right: 0.5rem;
+}
+/* ------------------ */
+
+.foto_receita{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+
+ 
