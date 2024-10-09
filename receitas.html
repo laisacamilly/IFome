@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="img/left-arrow-icon-on-transparent-background-free-png.webp" alt="Voltar para a página inicial"
+            <img src="img/voltar.webp" alt="Voltar para a página inicial"
                 class="botao">
         </a>
         <h1>Minhas receitas</h1>
@@ -77,15 +77,71 @@
             </div>
         </article>
 
-        <a href="nova_receita.html" class="Adicionar">
+        <a href="#popupAdicionar" class="Adicionar">
             <img src="img/Adicionar.png" alt="Adicionar" class="botao">
         </a>
+
+        <!-- Pop-up Adicionar Receita -->
+        <div id="popupAdicionar" class="popup">
+            <div class="conteudo-popup">
+                <a href="#" class="fechar">&times;</a> <!-- Link para fechar o pop-up -->
+                <form>
+                    <input type="text" name="Nome" placeholder="Nome do prato">
+                </form>
+                <a href="#">Inserir Imagem</a>
+
+                <div>
+                    <h2>Ingredientes:</h2>
+                    <ul>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                    </ul>
+
+                    <h2>Modo de preparo: </h2>
+                    <ol>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Escreva aqui">
+                            </form>
+                        </li>
+                    </ol>
+                </div>
+                </article>
+
+                <section>
+                    <a href="#" id="adicionar">Adicionar</a>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>
         <a href="receitas.html"><img src="img/caderno.png" alt="Icone das receitas" class="botao"></a>
         <a href="geladeira.html"><img src="img/Geladeira.png" alt="Icone da geladeira" class="botao"></a>
-        <a href="feed.html"><img src="img/Feed.png" alt="Icone do feed" class="botao"></a>
+        <a href="feed_novo.html"><img src="img/Feed.png" alt="Icone do feed" class="botao"></a>
     </footer>
 
 </body>

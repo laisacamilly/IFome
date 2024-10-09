@@ -7,6 +7,7 @@ header{
 .titulo{
     font-family: var(--fonte-titulo);
     font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
     align-self: center;
     margin-top: 1rem;
 }
