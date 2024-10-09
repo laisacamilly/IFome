@@ -105,9 +105,42 @@
                 <li id="validade">Validade: MM/DD</li>
             </ul>
         </article>
-        <a href="novo_ingrediente.html" class="Adicionar">
+        <!-- Link que ativa o pop-up -->
+        <a href="#popupAdicionar" class="Adicionar">
             <img src="img/adicionar.png" alt="Adicionar item à Geladeira" id="adicionar" class="botao">
         </a>
+
+        <!-- Pop-up Adicionar Item -->
+        <div id="popupAdicionar" class="popup">
+            <div class="conteudo-popup">
+                <a href="#" class="fechar">&times;</a> <!-- Link para fechar o pop-up -->
+                <h2>Adicionar Item</h2>
+                <ul>
+                    <li>
+                        <label for="tipo-ingrediente">Tipo de ingrediente;</label>
+                        <select name="tipo-ingrediente" id="tipo-ingrediente">
+                            <option value="proteina">Proteina</option>
+                            <option value="carboidrato">Carboidratos</option>
+                            <option value="laticinio">Laticínios</option>
+                            <option value="fruta">Fruta</option>
+                            <option value="verdura">Verdura</option>
+                            <option value="doce">Doce</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ingrediente">Ingrediente:</label>
+                        <input name="ingrediente" type="text">
+                    </li>
+                    <li>
+                        <label for="data-validade">Data de validade:</label>
+                        <input type="date">
+                    </li>
+                    <li>
+                        <a href="#" id="confirmar">confirmar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer>
