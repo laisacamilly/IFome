@@ -1,14 +1,14 @@
 :root{
         --fonte-titulo: 'Open Sans', 'sans-serif';
-        --vermelho: #c1121f;
+        --vermelho: #ff3131;
         --amarelo: #ffb627;
         --laranja: #e2711d;
         --cinza: #F2F2F2;
-        --verde: #9ad04b;
         --preto: #000000;
         --branco: #FFFFFF;
 }
 
+/* INICIO */
 html, body {
     height: 100%;
     width: 100%;
@@ -26,15 +26,30 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-titulo)
 
 }
 
-header form {
+header form input{
     display: flex;
-    align-items: center;
-    /*Colocar border-radius na barra de pesquisa*/
+    align-self: center;
+    border-radius: 0.4rem;
+    margin-top: 0.1rem;
+    padding: 0.5rem;
 }
+
+.botao {
+    margin-top: 0.4rem;
+    height: 2rem;
+    width: 3rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 4rem;
+}
+
+/* FIM */
 
 h1 {
     padding-top: 1rem;
@@ -68,6 +83,13 @@ article {
     align-items: center;
     margin: 1rem;
     border-radius: 10px;
+}
+
+
+article{
+    border-radius: 2px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -143,15 +165,6 @@ a img {
     padding-top: .5rem;
 }
 
-.botao {
-    height: 3rem;
-    width: 3rem;
-}
-
-.logo {
-    height: 4rem;
-}
-
 img.receita {
     height: 60%;
     width: 90%;
@@ -167,4 +180,62 @@ img.receita {
     background-color: transparent;
     height: 3rem;
     width: 3rem;
+}
+
+/* -------------*/
+article {
+    border-radius: 2px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+    margin-right: 8rem;
+    margin-top: 1rem;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 1rem;
+}
+
+.comida{
+    width: 20rem;
+    height: 15rem;
+}
+
+.bla{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bla2{
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+li{
+    margin-top: 0.4rem;
+}
+
+ul{
+    margin-bottom: 1.4rem;
+}
+
+a{
+    margin-top: 0.5rem;
+}
+
+.titulo{
+    font-family: var(--fonte-titulo);
+}
+
+.estilo{
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }

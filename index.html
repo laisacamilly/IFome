@@ -6,72 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Pagina inicial</title>
+    <title> Inicio </title>
 </head>
 
 <body>
+
+    <!-- INICIO -->
     <header>
-        <a href="#"><img src="img/Botão_menu.png" alt="botão de configurações" class="botao" id="menu"></a>
-        
-        <form> 
-            <!--Talvez dê para colocar a barra embaixo da logo e do botão do menu.
-            Se sobrar tempo eu posso dar uma olhada em tentar fazer isso-->
-            <input type="text" name="search" id="search" placeholder="Pesquisar receitas">
-        </form>
-        
+        <a class = 'estilo' href="#">
+            <img class='botao' src="img/Botão_menu.png" alt="botão de configurações"> </a>
+
+        <form> <input type="text" name="search" id="search" placeholder="Pesquise suas receitas aqui"> </form>
+
         <img src="img/logo_ifome.jpg" alt="logo do app" class="logo">
     </header>
 
+    <!-- MEIO -->
     <main>
-        <section>
-            <h1>VOCÊ TALVEZ GOSTE:</h1>
-            <article>
-                <h2>Strogonoff de carne</h2>
-                <img class='receita' src="img/strogonoff.jpeg" alt="Strogonoff">
-                <div>
-                    <h4>Ingredientes:</h4>
-                    <ul>
-                        <li>Ingrediente 1</li>
-                        <li>Ingrediente 2</li>
-                        <li>Ingrediente 3</li>
-                    </ul>
-                    <h4>Modo de preparo:</h4>
-                    <ol>
-                        <li>Instrução 1</li>
-                        <li>Instrução 2</li>
-                        <li>Instrução 3</li>
-                    </ol>
-                </div>
-            </article>
-            <br>
-            <article>
-                <h2>Lasanha Bolognesa</h2>
-                <img  class='receita' src="img/Lasanha.jpg" alt="Lasanha">
-                <div>
-                    <h4>Ingredientes:</h4>
-                    <ul>
-                        <li>Ingrediente 1</li>
-                        <li>Ingrediente 2</li>
-                        <li>Ingrediente 3</li>
-                    </ul>
-                    <h4>Modo de preparo:</h4>
-                    <ol>
-                        <li>Instrução 1</li>
-                        <li>Instrução 2</li>
-                        <li>Instrução 3</li>
-                    </ol>
-                </div>
-            </article>
-        </section>
-    </main>
-    <!--Tem uma borda branca entre o final do main e o inicio do footer. Arrumar isso-->
 
+        <p class='bla'> Receitas que você talvez goste </p>
 
-    <footer>
-        <a href="receitas.html"><img src="img/caderno.png" alt="Icone das receitas" class="botao"></a>
-        <a href="geladeira.html"><img src="img/Geladeira.png" alt="Icone da geladeira" class="botao"></a>
-        <a href="feed_novo.html"><img src="img/Feed.png" alt="Icone do feed" class="botao"></a>
-    </footer>
+        <article>
+            <a class = 'estilo' href="#">
+            <img class='comida' src="img/Lasanha.jpg" alt="Imagem 1">
+
+            <h2> Lasanha de carne </h2>
+            <div class="info">
+                <h3 class='bla2'>Ingredientes</h3>
+                <ul>
+                    <li>Carne moída</li>
+                    <li>Massa de lasanha</li>
+                    <li>Queijo</li>
+                </ul>
+
+                <h3 class='bla2'>Preparo</h3>
+                <p> ... </p>
+            </div>
+            </a>
+
+        </article>
+        
+        <article>
+            <a class = 'estilo' href="#">
+            <img class='comida' src="img/strogonoff.jpeg" alt="Imagem 1">
+
+            <h2> Strogonoff de Carne </h2>
+            <div class="info">
+                <h3 class='bla2'>Ingredientes</h3>
+                <ul>
+                    <li>Frango</li>
+                    <li>Creme de Leite</li>
+                    <li>Páprica</li>
+                </ul>
+
+                <h3 class='bla2'>Preparo</h3>
+                <p> ... </p>
+            </div>
+            </a>
+
+        </article>
+
+        <article>
+            <a class = 'estilo' href="#">
+            <img class='comida' src="img/Lasanha.jpg" alt="Imagem 1">
+
+            <h2> Bolo de Chocolate </h2>
+            <div class="info">
+                <h3 class='bla2'>Ingredientes</h3>
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Leite</li>
+                    <li>Creme de leite</li>
+                </ul>
+
+                <h3 class='bla2'>Preparo</h3>
+                <p> ... </p>
+            </div>
+            </a>
+
+        </article>
+
+        <!-- FIM -->
+        <footer>
+            <a href="receitas.html"><img src="img/caderno.png" alt="Icone das receitas" class="botao"></a>
+            <a href="geladeira.html"><img src="img/Geladeira.png" alt="Icone da geladeira" class="botao"></a>
+            <a href="feed_novo.html"><img src="img/Feed.png" alt="Icone do feed" class="botao"></a>
+        </footer>
 </body>
 
 </html>
