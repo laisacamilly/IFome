@@ -1,6 +1,6 @@
 :root{
         --fonte-titulo: 'Open Sans', 'sans-serif';
-        --vermelho: #f6511d;
+        --vermelho: #c1121f;
         --amarelo: #ffb627;
         --laranja: #e2711d;
         --cinza: #F2F2F2;
@@ -22,7 +22,7 @@ main {
 
 header {
     height: 4rem;
-    background-color: #ff3131;
+    background-color: var(--vermelho);
     display: flex;
     flex-direction: row;
     justify-content: space-around;

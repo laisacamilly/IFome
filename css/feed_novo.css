@@ -1,7 +1,7 @@
 /* Parte do cabeçalho */
 header{
     flex-direction: row;
-    background-color: var(--laranja);
+    background-color: var(--vermelho);
 }
 
 .titulo{
