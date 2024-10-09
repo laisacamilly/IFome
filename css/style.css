@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
 }
@@ -107,6 +106,11 @@ button:active span {
     left: 1px;
 }
 
+form {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
 
 div h4 {
     font-weight: bold;
@@ -138,8 +142,6 @@ a img {
 .logo {
     height: 4rem;
 }
-
-
 
 img.receita {
     height: 60%;
