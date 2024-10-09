@@ -1,17 +1,18 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 
 
-main{
+main {
     overflow: scroll;
     height: 82%;
     position: relative;
 }
 
-header{
+header {
     height: 4rem;
     background-color: #ff3131;
     display: flex;
@@ -21,13 +22,13 @@ header{
 
 }
 
-header form{
+header form {
     display: flex;
     align-items: center;
     /*Colocar border-radius na barra de pesquisa*/
 }
 
-h1{
+h1 {
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -37,7 +38,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-footer{
+footer {
     height: 8%;
     width: 100%;
     display: flex;
@@ -51,24 +52,25 @@ footer{
     padding-bottom: .5rem;
 }
 
-article{
+article {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    border-radius: 10px;
 }
 
-ul{
+ul {
     list-style-type: disc;
 }
 
-ol{
+ol {
     list-style-type: decimal;
 }
 
-div{
+div {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -84,17 +86,39 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+    height: 3rem;
+    width: 10.3rem;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+button:active {
+    border-top-color: black;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    border-left-color: black;
+    border-radius: 10px;
+}
+
+button:active span {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
 div h4 {
     font-weight: bold;
 }
 
-div ul{
+div ul {
     padding-top: .3rem;
     padding-bottom: .3rem;
     padding-left: 2rem;
 }
 
-div ol{
+div ol {
     padding-top: .3rem;
     padding-bottom: .3rem;
     padding-left: 2rem;
@@ -106,18 +130,18 @@ a img {
     padding-top: .5rem;
 }
 
-.botao{
+.botao {
     height: 3rem;
     width: 3rem;
 }
 
-.logo{
+.logo {
     height: 4rem;
 }
 
 
 
-img.receita{
+img.receita {
     height: 60%;
     width: 90%;
 }
@@ -126,11 +150,9 @@ img.receita{
     position: fixed;
     right: 0;
     bottom: 5rem;
-    
-   
 }
 
-.Adicionar img{
+.Adicionar img {
     background-color: transparent;
     height: 3rem;
     width: 3rem;
