@@ -1,32 +1,67 @@
 /* Parte do cabeçalho */
 header{
     flex-direction: row;
-    background-color: var(--verde);
+    background-color: var(--laranja);
 }
 
 .titulo{
     font-family: var(--fonte-titulo);
+    font-size: 1.6rem;
     align-self: center;
-    margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .voltar{
     align-self: center;
     margin-right: 1rem;
+    margin-top: 0.5rem;
 }
 
 .sino{
     align-self: center;
-    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    width: 4rem;
+    height: 2.2rem;
 }
 /* ------------------ */
 
-.foto_receita{
+article{
+    border-radius: 2px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+h2{
     display: flex;
-    justify-content: space-around;
-    margin: 2rem;
-    /*background-color: black;
-    border-radius: 20px;*/
+    flex-direction: row;
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-family: var(--fonte-titulo);
+}
+
+.comida{
+    width: 20rem;
+    height: 15rem;
+}
+
+.like{
+    width: 5rem;
+    height: 2.5rem;
+    margin-right: 13rem;
+}
+
+.texto{
+    margin-top: 1rem;
+}
+
+.add{
+    position: fixed;
+    left: 17rem;
+    bottom: 2.5rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 
