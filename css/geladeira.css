@@ -71,6 +71,17 @@ ul {
     color: #333;
 }
 
+.popup ul {
+    list-style-type: none;
+}
+
 .popup li {
     margin: 1rem;
+}
+
+a#confirmar {
+    text-decoration: none;
+    padding: .3rem 1rem .3rem 1rem;
+    color: black;
+    border: 1px solid black;
 }
