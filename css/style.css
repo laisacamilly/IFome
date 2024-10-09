@@ -8,6 +8,7 @@ html, body {
 main{
     overflow: scroll;
     height: 82%;
+    position: relative;
 }
 
 header{
@@ -121,4 +122,16 @@ img.receita{
     width: 90%;
 }
 
-/*O botão do menu no header está desalinhado. Tentar alinhar ele*/
+.Adicionar {
+    position: fixed;
+    right: 0;
+    bottom: 5rem;
+    
+   
+}
+
+.Adicionar img{
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+}
