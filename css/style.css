@@ -1,9 +1,18 @@
+:root{
+        --fonte-titulo: 'Open Sans', 'sans-serif';
+        --vermelho: #f6511d;
+        --amarelo: #ffb627;
+        --laranja: #e2711d;
+        --cinza: #F2F2F2;
+        --verde: #9ad04b;
+        --preto: #000000;
+        --branco: #FFFFFF;
+}
+
 html, body {
     height: 100%;
     width: 100%;
 }
-
-
 
 main {
     overflow: scroll;
