@@ -30,22 +30,32 @@ header {
 
 }
 
-header form input{
+form {
     display: flex;
     align-self: center;
-    border-radius: 0.4rem;
-    margin-top: 0.1rem;
-    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    border-radius: .4rem;
+    padding: .5rem;
+
 }
 
 .botao {
-    margin-top: 0.4rem;
     height: 2rem;
     width: 3rem;
 }
 
-.logo {
+footer .botao {
+    height: 3rem;
     width: 3rem;
+    margin-bottom: .5rem;
+}
+
+.logo {
+    width: 4rem;
     height: 4rem;
 }
 
@@ -76,17 +86,11 @@ footer {
 }
 
 article {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    border-radius: 10px;
-}
-
-
-article{
     border-radius: 2px;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -135,12 +139,6 @@ button:active span {
     position: relative;
     top: 1px;
     left: 1px;
-}
-
-form {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
 }
 
 div h4 {
