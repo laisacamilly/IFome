@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/geladeira.css">
+    <script src="js/script_geladeira.js"></script>
 </head>
 
 <body>
@@ -21,89 +22,90 @@
     </header>
 
     <main>
-        <article>
+        <article class="laticinios">
             <div>
                 <h2>Laticínios</h2> <img src="img/leite.png" alt="Laticínios">
             </div>
             <ul>
                 <li>Queijo</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Leite</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Iogurte</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
 
-        <article>
+        <article class="proteinas">
             <div>
                 <h2>Proteínas</h2> <img src="img/proteinas.png" alt="Proteínas">
             </div>
             <ul>
                 <li>Carne</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Ovos</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Grão de bico</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
 
-        <article>
+        <article class="frutas">
             <div>
                 <h2>Frutas</h2> <img src="img/frutas.png" alt="Frutas">
             </div>
             <ul>
                 <li>Maçã</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Banana</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Morango</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
 
-        <article>
+        <article class="verduras">
             <div>
                 <h2>Verduras</h2> <img src="img/verduras.png" alt="Verduras">
             </div>
             <ul>
                 <li>Alface</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Tomate</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Cenoura</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
 
-        <article>
+        <article class="carboidratos">
             <div>
                 <h2>Carboidratos</h2> <img src="img/carbs.png" alt="Carboidratos">
             </div>
             <ul>
                 <li>Pão</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Arroz</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Macarrão</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
 
-        <article>
+        <article class="doces">
             <div>
                 <h2>Doces</h2> <img src="img/doces.png" alt="Doces">
             </div>
             <ul>
                 <li>Chocolate</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 10/11/2025</li>
                 <li>Bolacha</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 14/10/2024</li>
                 <li>Doce de leite</li>
-                <li class="validade">Validade: MM/DD</li>
+                <li class="validade">Validade: 13/11/2025</li>
             </ul>
         </article>
+        
         <!-- Link que ativa o pop-up -->
         <a href="#popupAdicionar" class="Adicionar">
             <img src="img/adicionar.png" alt="Adicionar item à Geladeira" id="adicionar" class="botao">
@@ -119,8 +121,8 @@
                         <label for="tipo-ingrediente">Tipo de ingrediente;</label>
                         <select name="tipo-ingrediente" id="tipo-ingrediente">
                             <option value="proteina">Proteina</option>
-                            <option value="carboidrato">Carboidratos</option>
-                            <option value="laticinio">Laticínios</option>
+                            <option value="carboidrato">Carboidrato</option>
+                            <option value="laticinio">Laticínio</option>
                             <option value="fruta">Fruta</option>
                             <option value="verdura">Verdura</option>
                             <option value="doce">Doce</option>
@@ -135,7 +137,7 @@
                         <input type="date">
                     </li>
                     <li>
-                        <a href="#" id="confirmar">confirmar</a>
+                        <a href="#" id="confirmar">adicionar</a>
                     </li>
                 </ul>
             </div>
