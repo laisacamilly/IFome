@@ -1,5 +1,5 @@
 /* Parte do cabeçalho */
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -7,7 +7,7 @@ header{
 
 }
 
-.titulo{
+.titulo {
     font-family: var(--fonte-titulo);
     font-size: 1.6rem;
     align-self: center;
@@ -15,21 +15,22 @@ header{
     margin-right: 1rem;
 }
 
-.sino{
+.sino {
     align-self: center;
     margin-top: 0.2rem;
     width: 4rem;
     height: 3rem;
 }
+
 /* ------------------ */
 
-article{
+article {
     border-radius: 2px;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-h2{
+h2 {
     display: flex;
     flex-direction: row;
     margin-left: 1rem;
@@ -38,18 +39,18 @@ h2{
     font-family: var(--fonte-titulo);
 }
 
-.comida{
+.comida {
     width: 20rem;
     height: 15rem;
 }
 
-.like{
+.like {
     width: 5rem;
     height: 2.5rem;
     margin-right: 13rem;
 }
 
-.texto{
+.texto {
     margin-top: 1rem;
 }
 

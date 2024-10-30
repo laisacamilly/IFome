@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     popup = document.querySelector(".popup");
     enviar = popup.querySelector("#publicar");
     main = document.querySelector("main");
 
-    enviar.addEventListener("click", function(event) {
+    enviar.addEventListener("click", function (event) {
         article = document.createElement("article");
 
         h2 = document.createElement("h2");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Obtém o arquivo do input[type='file']
         fileInput = document.querySelector("input[type='file']");
         file = fileInput.files[0];
-        
+
         if (file) {
             // Cria uma URL temporária para o arquivo
             foto = document.createElement("img");
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
         a = document.createElement("a");
         a.href = "#";
 
-        img_like = document.createElement("img"); 
+        img_like = document.createElement("img");
         img_like.src = "img/botoes.png";
         img_like.alt = "botão do like";
-        img_like.classList.add("like"); 
+        img_like.classList.add("like");
         a.appendChild(img_like);
 
         article.appendChild(a);
