@@ -48,4 +48,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         event.stopPropagation();
     });
+
+    img_like = document.querySelectorAll(".like");
+
+    img_like.forEach(function (element) {
+        element.addEventListener("click", function (event) {
+            if(element.getAttribute("src") == "img/botoes.png") {
+                element.src = "img/botoes_click.png";
+            } else {
+                element.src = "img/botoes.png";
+            }
+                
+            
+        });
+    });
 });

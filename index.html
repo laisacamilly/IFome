@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_index.js"></script>
     <title> Inicio </title>
 </head>
 
@@ -13,8 +14,9 @@
 
     <!-- INICIO -->
     <header>
-        <a class='estilo' href="#">
-            <img class='botao' src="img/Botão_menu.png" alt="botão de configurações"> </a>
+        <a class='estilo' id="botao_menu" href="#">
+            <img class='botao' src="img/Botão_menu.png" alt="botão de configurações">
+        </a>
 
         <form> <input type="text" name="search" id="search" placeholder="Pesquise suas receitas"> </form>
 
@@ -68,7 +70,7 @@
 
         <article>
             <a class='estilo' href="#">
-                <img class='comida' src="img/Lasanha.jpg" alt="Imagem 1">
+                <img class='comida' src="img/bolo.png" alt="Imagem 1">
 
                 <h2> Bolo de Chocolate </h2>
                 <div class="info">
@@ -86,6 +88,23 @@
 
         </article>
 
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="top">
+                <a href="conta.html" class="conta"><img src="img/foto_perfil.png" alt="foto de perfil"></a>
+                <a href="#" class="closebtn" id="closeButton">&times;</a>
+            </div>
+            <div class="linha"></div>
+            <a href="receitas.html">Minhas receitas</a>
+            <a href="geladeira.html">Minha Geladeira</a>
+            <a href="feed_novo.html">Meu Feed</a>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div id="mainContent" class="main-content">
+            <!-- Seu conteúdo principal aqui -->
+        </div>
+
         <!-- FIM -->
         <footer>
             <a href="receitas.html"><img src="img/caderno.png" alt="Icone das receitas" class="botao"></a>
@@ -94,6 +113,7 @@
         </footer>
 
     </main>
+
 </body>
 
 </html>
