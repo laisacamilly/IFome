@@ -267,6 +267,7 @@ a {
     color: black;
     display: block;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .sidebar a:hover {

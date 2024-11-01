@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menuButton.addEventListener("click", function(event) {
         event.preventDefault(); // Previne o comportamento padrão do link
-        sidebar.style.width = "45%";
-        mainContent.style.marginLeft = "45%";
+        sidebar.style.width = "10rem";
+        mainContent.style.marginLeft = "10rem";
     });
 
     closeButton.addEventListener("click", function() {
