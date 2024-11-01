@@ -1,10 +1,6 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
 
-    document.documentElement.requestFullscreen().catch(err => {
-        alert(`Erro ao tentar entrar em modo de tela cheia: ${err.message} (${err.name})`);
-    });
-
     var menuButton = document.getElementById("botao_menu");
     var closeButton = document.getElementById("closeButton");
     var sidebar = document.getElementById("sidebar");
