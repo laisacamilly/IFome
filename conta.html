@@ -6,20 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feed_novo.css">
+    <link rel="stylesheet" href="css/conta.css">
+    <script src="js/script_conta.js"></script>
     <title> Conta </title>
 </head>
 
 <body>
+
     <header>
         <a class='voltar' href="index.html">
             <img class='botao' src="img/voltar.svg" alt="botão de retorno">
         </a>
-        <h2 class='titulo'> Conta </h2>
+        <h2 class='titulo'> conta </h2>
 
         <img class='sino' src="img/logo_ifome.jpg" alt="botão do sino">
     </header>
 
+    <main>
+        <h1>conta</h1>
+        <section class="foto">
+            <h3>Tire sua foto:</h3>
 
+            <button id="openCameraButton">Abrir Câmera</button>
+
+            <!-- Popup que contém a câmera e a foto capturada -->
+            <div id="cameraPopup" class="Popup">
+                <div class="conteudo-Popup">
+                    <!-- Exibe a câmera ao vivo -->
+                    <video id="video" autoplay playsinline></video>
+                    <img id="photo">
+
+                    <!-- Botões de controle -->
+                    <div class="botoes">
+                        <button id="tirar-foto">Tirar Foto</button>
+                        <button id="tentar-novamente">Tentar Novamente</button>
+                        <button id="enviar">Enviar Foto</button>
+                        <button id="fechar">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nome">
+            <label for="nome">Insira Seu Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <button id="enviar-nome">Enviar</button>
+        </section>
+
+
+    </main>
 
     <footer>
         <a href="receitas.html"><img src="img/caderno.png" alt="Icone das receitas" class="botao"></a>

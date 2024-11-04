@@ -8,7 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         article = document.createElement("article");
 
         h2 = document.createElement("h2");
-        h2.innerHTML = "Jefferson";
+        nome = localStorage.getItem("nome");
+        if (nome) {
+            h2.innerHTML = nome;
+        } else {
+            h2.innerHTML = "Anônimo";
+        }
+        
         article.appendChild(h2);
 
         // Obtém o arquivo do input[type='file']

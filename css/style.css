@@ -305,6 +305,7 @@ a {
 .top a img {
     height: 2rem;
     width: 4rem;
+    border-radius: 50%;
 }
 
 a.conta {
