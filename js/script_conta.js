@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    openCameraButton = document.querySelector('#openCameraButton');
-    cameraPopup = document.querySelector('#cameraPopup');
-    video = document.querySelector('#video');
-    photo = document.querySelector('#photo');
-    tirar_foto = document.querySelector('#tirar-foto');
-    tentar_novamente = document.querySelector('tentar-novamente');
-    enviar = document.querySelector('#enviar');
-    fechar = document.querySelector('#fechar');
+    openCameraButton = document.getElementById('openCameraButton');
+    cameraPopup = document.getElementById('cameraPopup');
+    video = document.getElementById('video');
+    photo = document.getElementById('photo');
+    tirar_foto = document.getElementById('tirar-foto');
+    tentar_novamente = document.getElementById('tentar-novamente');
+    enviar = document.getElementById('enviar');
+    fechar = document.getElementById('fechar');
     nome = document.querySelector('input[type="text"]').value;
-    enviar_nome = document.querySelector('#enviar-nome');
 
     let stream; // Para armazenar o stream da câmera
 
@@ -72,10 +71,5 @@ document.addEventListener('DOMContentLoaded', function () {
     enviar.addEventListener('click', function () {
         localStorage.setItem('photo', imageDataUrl);
         console.log(imageDataUrl)
-    });
-
-    enviar_nome.addEventListener('click', function () {
-        localStorage.setItem('nome', nome);
-        console.log(nome)
     });
 })
