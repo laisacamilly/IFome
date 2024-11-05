@@ -1,3 +1,16 @@
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: xx-large;
+}
+
 .foto {
     display: flex;
     flex-direction: row;
