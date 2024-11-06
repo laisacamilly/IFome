@@ -15,9 +15,9 @@ header {
     margin-right: 1rem;
 }
 
-.sino {
+.logo {
     align-self: center;
-    margin-top: 0.2rem;
+    /* margin-top: 0.2rem; */
     width: 4rem;
     height: 3rem;
 }
