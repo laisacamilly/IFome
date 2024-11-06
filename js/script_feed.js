@@ -53,6 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
         main.appendChild(article);
 
         event.stopPropagation();
+
+        img_like = document.querySelectorAll(".like");
+
+        img_like.forEach(function (element) {
+            element.addEventListener("click", function (event) {
+                if(element.getAttribute("src") == "img/botoes.png") {
+                    element.src = "img/botoes_click.png";
+                } else {
+                    element.src = "img/botoes.png";
+                }
+            });
+        });
     });
 
     img_like = document.querySelectorAll(".like");
@@ -64,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 element.src = "img/botoes.png";
             }
-                
             
         });
     });

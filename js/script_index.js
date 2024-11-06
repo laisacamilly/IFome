@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
     var closeButton = document.getElementById("closeButton");
     var sidebar = document.getElementById("sidebar");
     var mainContent = document.getElementById("mainContent");
-    
+
+    // Solicitar tela cheia ao carregar a página
+    function requestFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch(err => {
+                console.error(`Erro ao tentar entrar em modo de tela cheia: ${err.message} (${err.name})`);
+            });
+        }
+    }
+
+    // Tentar entrar em modo de tela cheia ao carregar a página
+    requestFullScreen();
 
     menuButton.addEventListener("click", function(event) {
         event.preventDefault(); // Previne o comportamento padrão do link
@@ -17,4 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
         sidebar.style.width = "0";
         mainContent.style.marginLeft = "0";
     });
-})
+
+    img = document.querySelector("img.conta");
+    foto_perfil = localStorage.getItem("photo");
+
+    if (foto_perfil) {
+        img.src = foto_perfil;
+        console.log(foto_perfil);
+        img.style.width = "2.5rem";
+        img.style.height = "2.5rem";
+        img.style.marginLeft = "1rem";
+        
+    }
+
+});
