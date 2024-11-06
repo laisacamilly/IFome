@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     foto = document.querySelector('.usuario');
 
     let stream; // Para armazenar o stream da câmera
+    let imageDataUrl; // Para armazenar a imagem capturada
 
     // Função para abrir o Popup e iniciar a câmera
     async function openCameraPopup() {
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Evento para abrir o Popup da câmera ao clicar no botão
     openCameraButton.addEventListener('click', openCameraPopup);
 
+    // Função para enviar e salvar a imagem no localStorage
     enviar.addEventListener('click', function () {
         localStorage.setItem('photo', imageDataUrl);
         console.log(imageDataUrl);
@@ -77,10 +79,22 @@ document.addEventListener('DOMContentLoaded', function () {
         closeCameraPopup();
     });
 
+    // Função para salvar o nome no localStorage
     enviar_nome.addEventListener('click', function () {
         nome = document.querySelector('input[type="text"]').value;
         localStorage.setItem('nome', nome);
-        console.log(nome)
+        console.log(nome);
     });
 
-})
+    // Carregar a imagem do localStorage ao iniciar
+    savedImageDataUrl = localStorage.getItem('photo');
+    savedName = localStorage.getItem('nome');
+    if (savedImageDataUrl) {
+        foto.src = savedImageDataUrl;
+        foto.style.display = 'block';
+    }
+
+    if (savedName) {
+        document.querySelector('input[type="text"]').value = savedName;
+    }
+});
