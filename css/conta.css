@@ -1,3 +1,25 @@
+html {
+    font-family: var(--fonte-titulo);
+}
+
+main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: xx-large;
+}
+
 .foto {
     display: flex;
     flex-direction: row;
@@ -53,6 +75,7 @@ button {
     width: 6rem;
     font-size: 1rem;
     margin: .5rem;
+    
 }
 
 .botoes {
@@ -62,10 +85,24 @@ button {
 
 .nome {
     display: flex;
-    flex-direction: row;
-    align-items: cente;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nome input {
     height: 1.5rem;
+    display: flex;
+    font-size: large;
+}
+
+.nome label {
+    font-size: large;
+    
+}
+
+.usuario {
+    /* margin-bottom: 1rem; */
+    border-radius: 50%;
+    height: 10.5rem;
+    width: 10.5rem;
 }
