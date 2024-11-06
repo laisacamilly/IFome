@@ -28,4 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
         sidebar.style.width = "0";
         mainContent.style.marginLeft = "0";
     });
+
+    
 });

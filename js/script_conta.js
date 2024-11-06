@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     enviar = document.getElementById('enviar');
     fechar = document.getElementById('fechar');
     enviar_nome = document.getElementById('enviar-nome');
+    foto = document.querySelector('.usuario');
 
     let stream; // Para armazenar o stream da câmera
 
@@ -70,7 +71,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     enviar.addEventListener('click', function () {
         localStorage.setItem('photo', imageDataUrl);
-        console.log(imageDataUrl)
+        console.log(imageDataUrl);
+        foto.src = imageDataUrl;
+        foto.style.display = 'block';
         closeCameraPopup();
     });
 
