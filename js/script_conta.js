@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tentar_novamente = document.getElementById('tentar-novamente');
     enviar = document.getElementById('enviar');
     fechar = document.getElementById('fechar');
-    nome = document.querySelector('input[type="text"]').value;
+    enviar_nome = document.getElementById('enviar-nome');
 
     let stream; // Para armazenar o stream da câmera
 
@@ -72,4 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('photo', imageDataUrl);
         console.log(imageDataUrl)
     });
+
+    enviar_nome.addEventListener('click', function () {
+        nome = document.querySelector('input[type="text"]').value;
+        localStorage.setItem('nome', nome);
+        console.log(nome)
+    });
+
 })
