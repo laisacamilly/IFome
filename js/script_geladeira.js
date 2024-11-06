@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ingrediente = document.createElement("li");
         ingrediente.innerHTML = popup.querySelector("input[type='text']").value;
 
-        switch(valor) {
+        switch (valor) {
             case "laticinio":
                 laticinios.appendChild(ingrediente);
                 laticinios.appendChild(data);

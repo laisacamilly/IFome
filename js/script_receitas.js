@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form = ultimoIngred.querySelector("form");
         valor = form.querySelector("input").value;
         console.log(valor);
-        
+
         if (valor != "") {
             novoLi = document.createElement("li");
             form = document.createElement("form");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form = ultimaEtapa.querySelector("form");
         valor = form.querySelector("input").value;
         console.log(valor);
-        
+
         if (valor != "") {
             novoLi = document.createElement("li");
             form = document.createElement("form");
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 novoLi.innerHTML = valor;
                 ul.appendChild(novoLi);
             }
-    
+
         }
 
         div.appendChild(ul);
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.appendChild(h2_etapas);
 
         ol = document.createElement("ol");
-        
+
         for (li of popup.querySelectorAll("ol li")) {
             novoLi = document.createElement("li");
             valor = li.querySelector("input").value;
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.appendChild(ol);
 
         article.appendChild(div);
-        
+
         main.appendChild(article);
 
 
