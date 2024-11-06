@@ -29,18 +29,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Função para capturar a foto
     tirar_foto.addEventListener('click', () => {
-        canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        context = canvas.getContext('2d');
-        context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
+        const canvas = document.createElement('canvas');
+        canvas.width = larguraFoto;
+        canvas.height = alturaFoto;
+        const context = canvas.getContext('2d');
+    
+        // Desenha a imagem com ajuste de escala para o tamanho desejado
+        context.drawImage(video, 0, 0, video.videoWidth, video.videoHeight, 0, 0, larguraFoto, alturaFoto);
+    
         // Exibe a imagem capturada
-        imageDataUrl = canvas.toDataURL('image/png');
+        const imageDataUrl = canvas.toDataURL('image/png');
         photo.src = imageDataUrl;
         photo.style.display = 'block';
         video.style.display = 'none';
-
+    
         // Alterna os botões
         tirar_foto.style.display = 'none';
         tentar_novamente.style.display = 'inline-block';
@@ -71,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     enviar.addEventListener('click', function () {
         localStorage.setItem('photo', imageDataUrl);
         console.log(imageDataUrl)
+        closeCameraPopup();
     });
 
     enviar_nome.addEventListener('click', function () {

@@ -28,17 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
         sidebar.style.width = "0";
         mainContent.style.marginLeft = "0";
     });
-
-    img = document.querySelector("img.conta");
-    foto_perfil = localStorage.getItem("photo");
-
-    if (foto_perfil) {
-        img.src = foto_perfil;
-        console.log(foto_perfil);
-        img.style.width = "2.5rem";
-        img.style.height = "2.5rem";
-        img.style.marginLeft = "1rem";
-        
-    }
-
 });
