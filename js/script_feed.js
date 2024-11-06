@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    img_like = document.querySelectorAll(".like");
+    img_like2 = document.querySelectorAll(".like");
 
-    img_like.forEach(function (element) {
+    img_like2.forEach(function (element) {
         element.addEventListener("click", function (event) {
             if(element.getAttribute("src") == "img/botoes.png") {
                 element.src = "img/botoes_click.png";
