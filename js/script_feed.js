@@ -4,6 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const enviar = popup.querySelector("#publicar");
     const main = document.querySelector("main");
 
+    // Função para alternar a imagem do botão "like"
+    function toggleLikeImage(element) {
+        if (element.getAttribute("src") === "img/botoes.png") {
+            element.src = "img/botoes_click.png";
+        } else {
+            element.src = "img/botoes.png";
+        }
+    }
+
+    // Adiciona evento de clique aos botões "like" já presentes no documento
+    document.querySelectorAll(".like").forEach(function (element) {
+        element.addEventListener("click", function () {
+            toggleLikeImage(element);
+        });
+    });
+
     enviar.addEventListener("click", function (event) {
         const article = document.createElement("article");
 
@@ -43,13 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
         img_like.classList.add("like");
         a.appendChild(img_like);
 
-        // Adiciona o evento de clique no botão "like" criado
+        // Adiciona evento de clique no novo botão "like"
         img_like.addEventListener("click", function () {
-            if (img_like.getAttribute("src") === "img/botoes.png") {
-                img_like.src = "img/botoes_click.png";
-            } else {
-                img_like.src = "img/botoes.png";
-            }
+            toggleLikeImage(img_like);
         });
 
         article.appendChild(a);
