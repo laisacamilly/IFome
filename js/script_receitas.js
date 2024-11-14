@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.appendChild(ol);
 
         article.appendChild(div);
+        article.classList.add("novo_post");
 
         main.appendChild(article);
 
